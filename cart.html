@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Toy Haven shopping cart."
+    >
+
+    <title>Toy Haven | Cart</title>
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="assets/favicon.svg"
+    >
+
+    <link
+        rel="manifest"
+        href="manifest.webmanifest"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="top-header">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            TOY HAVEN
+        </a>
+
+        <form
+            class="search-box"
+            id="global-search"
+        >
+
+            <input
+                type="search"
+                id="global-search-input"
+                placeholder="Search toys, ages, brands..."
+                aria-label="Search products"
+            >
+
+            <button type="submit">
+                ⌕
+            </button>
+
+        </form>
+
+        <div class="header-actions">
+
+            <a href="wishlist.html">
+                ♡ Wishlist
+            </a>
+
+            <a href="cart.html">
+                🛒 Cart
+                <span class="cart-count">0</span>
+            </a>
+
+        </div>
+
+        <button
+            class="hamburger"
+            id="hamburger"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+    <nav
+        class="main-nav"
+        id="main-nav"
+    >
+
+        <div class="nav-container">
+
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="products.html?category=Figurines">Figurines</a>
+            <a href="products.html?category=Toys">Toys</a>
+            <a href="products.html?category=Board%20Games">Board Games</a>
+            <a href="products.html?category=Diecast%20Cars">Diecast Cars</a>
+            <a href="support.html">Support</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-heading">
+
+        <p class="section-label">
+            YOUR SHOPPING BAG
+        </p>
+
+        <h1>
+            Shopping Cart
+        </h1>
+
+        <p>
+            Review your selected products before checkout.
+        </p>
+
+    </section>
+
+
+    <section class="cart-section">
+
+        <div
+            id="cart-items"
+            class="cart-items"
+        ></div>
+
+        <div
+            id="cart-empty"
+            class="empty-cart hidden"
+        >
+
+            <div class="empty-icon">
+                🛒
+            </div>
+
+            <h2>
+                Your cart is empty
+            </h2>
+
+            <p>
+                Add some exciting products to get started.
+            </p>
+
+            <a
+                href="products.html"
+                class="primary-button"
+            >
+                Shop Products
+            </a>
+
+        </div>
+
+
+        <aside
+            class="cart-summary"
+            id="cart-summary"
+        >
+
+            <h2>
+                Cart Summary
+            </h2>
+
+            <div class="summary-row">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="cart-subtotal">
+                    LKR 0
+                </strong>
+
+            </div>
+
+            <div class="summary-row">
+
+                <span>
+                    Delivery
+                </span>
+
+                <strong>
+                    Free
+                </strong>
+
+            </div>
+
+            <hr>
+
+            <div class="summary-row total-row">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cart-total">
+                    LKR 0
+                </strong>
+
+            </div>
+
+            <button
+                class="primary-button full-button"
+                id="clear-cart"
+                type="button"
+            >
+                Clear Cart
+            </button>
+
+            <a
+                href="checkout.html"
+                class="primary-button full-button"
+                id="checkout-button"
+            >
+                Proceed to Checkout
+            </a>
+
+        </aside>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>TOY HAVEN</h2>
+
+            <p>
+                Your destination for toys, games and
+                collectible treasures.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart</a>
+            <a href="support.html">Support</a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Categories</h3>
+
+            <a href="products.html?category=Figurines">
+                Figurines
+            </a>
+
+            <a href="products.html?category=Toys">
+                Toys
+            </a>
+
+            <a href="products.html?category=Board%20Games">
+                Board Games
+            </a>
+
+            <a href="products.html?category=Diecast%20Cars">
+                Diecast Cars
+            </a>
+
+        </div>
+
+        <div class="newsletter">
+
+            <h3>Stay Updated</h3>
+
+            <p>
+                Subscribe to receive our latest toy updates.
+            </p>
+
+            <form id="newsletter-form">
+
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+            <p
+                id="newsletter-message"
+                class="form-message"
+            ></p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Toy Haven. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

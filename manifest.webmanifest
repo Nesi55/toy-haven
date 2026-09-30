@@ -1,0 +1,17 @@
+{
+    "name": "Toy Haven",
+    "short_name": "Toy Haven",
+    "description": "Interactive toy and collectible shopping website.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ff8a00",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "assets/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}

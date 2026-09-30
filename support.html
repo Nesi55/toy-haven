@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Toy Haven feedback and customer support."
+    >
+
+    <title>Toy Haven | Support</title>
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="assets/favicon.svg"
+    >
+
+    <link
+        rel="manifest"
+        href="manifest.webmanifest"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="top-header">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            TOY HAVEN
+        </a>
+
+        <form
+            class="search-box"
+            id="global-search"
+        >
+
+            <input
+                type="search"
+                id="global-search-input"
+                placeholder="Search toys, ages, brands..."
+                aria-label="Search products"
+            >
+
+            <button type="submit">
+                ⌕
+            </button>
+
+        </form>
+
+        <div class="header-actions">
+
+            <a href="wishlist.html">
+                ♡ Wishlist
+            </a>
+
+            <a href="cart.html">
+                🛒 Cart
+                <span class="cart-count">0</span>
+            </a>
+
+        </div>
+
+        <button
+            class="hamburger"
+            id="hamburger"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+    <nav
+        class="main-nav"
+        id="main-nav"
+    >
+
+        <div class="nav-container">
+
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="products.html?category=Figurines">Figurines</a>
+            <a href="products.html?category=Toys">Toys</a>
+            <a href="products.html?category=Board%20Games">Board Games</a>
+            <a href="products.html?category=Diecast%20Cars">Diecast Cars</a>
+            <a href="support.html">Support</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-heading">
+
+        <p class="section-label">
+            WE ARE HERE TO HELP
+        </p>
+
+        <h1>
+            Feedback & Support
+        </h1>
+
+        <p>
+            Have a question or want to share your experience?
+        </p>
+
+    </section>
+
+
+    <section class="support-section">
+
+        <div class="support-form-card">
+
+            <h2>
+                Send Us a Message
+            </h2>
+
+            <p>
+                Complete the form and our support team
+                will receive your feedback.
+            </p>
+
+            <form
+                id="feedback-form"
+                novalidate
+            >
+
+                <div class="form-group">
+
+                    <label for="feedback-name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="feedback-name"
+                        required
+                    >
+
+                    <small class="field-error"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="feedback-email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="feedback-email"
+                        required
+                    >
+
+                    <small class="field-error"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="feedback-message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="feedback-message"
+                        rows="6"
+                        required
+                    ></textarea>
+
+                    <small class="field-error"></small>
+
+                </div>
+
+
+                <p
+                    id="feedback-success"
+                    class="form-message"
+                ></p>
+
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                >
+                    Send Feedback
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="faq-section">
+
+            <p class="section-label">
+                FAQ
+            </p>
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        How can I add a product to my cart?
+                    </span>
+
+                    <span>
+                        +
+                    </span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Open the Products page and select
+                        Add to Cart on the product you want.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        Can I save products for later?
+                    </span>
+
+                    <span>
+                        +
+                    </span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. Use Add to Wishlist and manage
+                        your collection from the Wishlist page.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        Does my cart remain after refreshing?
+                    </span>
+
+                    <span>
+                        +
+                    </span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. Cart information is stored in
+                        your browser's localStorage.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        What payment methods are available?
+                    </span>
+
+                    <span>
+                        +
+                    </span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        The website provides Card and
+                        Cash on Delivery simulation options.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>TOY HAVEN</h2>
+
+            <p>
+                Your destination for toys, games and
+                collectible treasures.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart</a>
+            <a href="support.html">Support</a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Categories</h3>
+
+            <a href="products.html?category=Figurines">Figurines</a>
+            <a href="products.html?category=Toys">Toys</a>
+            <a href="products.html?category=Board%20Games">Board Games</a>
+            <a href="products.html?category=Diecast%20Cars">Diecast Cars</a>
+
+        </div>
+
+        <div class="newsletter">
+
+            <h3>Stay Updated</h3>
+
+            <p>
+                Subscribe to receive our latest toy updates.
+            </p>
+
+            <form id="newsletter-form">
+
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+            <p
+                id="newsletter-message"
+                class="form-message"
+            ></p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Toy Haven. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

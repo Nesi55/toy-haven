@@ -1,0 +1,526 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Toy Haven - toys, figurines, board games and diecast cars.">
+    <meta name="theme-color" content="#ff8a00">
+
+    <title>Toy Haven | Home</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="top-header">
+
+        <a href="index.html" class="logo">
+            TOY HAVEN
+        </a>
+
+        <form class="search-box" id="global-search">
+            <input
+                type="search"
+                id="global-search-input"
+                placeholder="Search toys, ages, brands..."
+                aria-label="Search products"
+            >
+            <button type="submit">⌕</button>
+        </form>
+
+        <div class="header-actions">
+            <a href="wishlist.html">♡ Wishlist</a>
+            <a href="cart.html">🛒 Cart <span class="cart-count">0</span></a>
+        </div>
+
+        <button
+            class="hamburger"
+            id="hamburger"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+    <nav class="main-nav" id="main-nav">
+
+        <div class="nav-container">
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="products.html?category=Figurines">
+                Figurines
+            </a>
+
+            <a href="products.html?category=Toys">
+                Toys
+            </a>
+
+            <a href="products.html?category=Board%20Games">
+                Board Games
+            </a>
+
+            <a href="products.html?category=Diecast%20Cars">
+                Diecast Cars
+            </a>
+
+            <a href="support.html">
+                Support
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero" id="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-label" id="hero-label">
+                WELCOME TO TOY HAVEN
+            </p>
+
+            <h1 id="hero-title">
+                BIG FUN FOR LITTLE ADVENTURES
+            </h1>
+
+            <p class="hero-text" id="hero-text">
+                Discover toys, games and collectibles made for every adventure.
+            </p>
+
+            <a href="products.html" class="hero-button">
+                Shop Now
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <div class="toy-circle" id="hero-icon">
+                🧸
+            </div>
+        </div>
+
+        <div class="hero-dots" id="hero-dots">
+            <button class="active" data-slide="0"></button>
+            <button data-slide="1"></button>
+            <button data-slide="2"></button>
+            <button data-slide="3"></button>
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                EXPLORE
+            </p>
+
+            <h2>
+                Shop by Category
+            </h2>
+
+            <p>
+                Find something exciting for every type of toy lover.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <a
+                href="products.html?category=Figurines"
+                class="category-card reveal"
+            >
+                <div class="category-icon">🧸</div>
+                <h3>Figurines</h3>
+                <p>Collectible characters and figures.</p>
+            </a>
+
+            <a
+                href="products.html?category=Toys"
+                class="category-card reveal"
+            >
+                <div class="category-icon">🪀</div>
+                <h3>Toys</h3>
+                <p>Fun toys for every adventure.</p>
+            </a>
+
+            <a
+                href="products.html?category=Board%20Games"
+                class="category-card reveal"
+            >
+                <div class="category-icon">🎲</div>
+                <h3>Board Games</h3>
+                <p>Games for family and friends.</p>
+            </a>
+
+            <a
+                href="products.html?category=Diecast%20Cars"
+                class="category-card reveal"
+            >
+                <div class="category-icon">🏎️</div>
+                <h3>Diecast Cars</h3>
+                <p>Collect your favourite cars.</p>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRENDING -->
+
+    <section class="trending section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                POPULAR RIGHT NOW
+            </p>
+
+            <h2>
+                Trending Searches
+            </h2>
+
+        </div>
+
+        <div class="trending-list">
+
+            <a href="products.html?search=Action">
+                Action Figures
+            </a>
+
+            <a href="products.html?search=Collectible">
+                Collectibles
+            </a>
+
+            <a href="products.html?search=Board">
+                Board Games
+            </a>
+
+            <a href="products.html?search=Car">
+                Diecast Cars
+            </a>
+
+            <a href="products.html?search=Robot">
+                Remote Control
+            </a>
+
+            <a href="products.html?search=Educational">
+                Educational Toys
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED PRODUCT -->
+
+    <section class="product-of-day section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                TODAY'S PICK
+            </p>
+
+            <h2>
+                Product of the Day
+            </h2>
+
+            <p>
+                A special toy selected for today's adventure.
+            </p>
+
+        </div>
+
+        <div id="featured-product"></div>
+
+    </section>
+
+
+    <!-- RECOMMENDED -->
+
+    <section class="recommended section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                YOU MAY LIKE
+            </p>
+
+            <h2>
+                Recommended for You
+            </h2>
+
+            <p>
+                Popular picks selected for toy lovers.
+            </p>
+
+        </div>
+
+        <div
+            class="product-grid"
+            id="recommended-products"
+        ></div>
+
+    </section>
+
+
+    <!-- RECENTLY VIEWED -->
+
+    <section class="recently-viewed section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                YOUR ACTIVITY
+            </p>
+
+            <h2>
+                Recently Viewed
+            </h2>
+
+            <p>
+                Pick up where you left off.
+            </p>
+
+        </div>
+
+        <div
+            class="recent-grid"
+            id="recent-products"
+        ></div>
+
+    </section>
+
+
+    <!-- BENEFITS -->
+
+    <section class="benefits section">
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                🚚
+            </div>
+
+            <h3>
+                Fast Delivery
+            </h3>
+
+            <p>
+                Quick and reliable delivery to your doorstep.
+            </p>
+
+        </div>
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                🔒
+            </div>
+
+            <h3>
+                Secure Payment
+            </h3>
+
+            <p>
+                Your payment information is kept safe and secure.
+            </p>
+
+        </div>
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                ⭐
+            </div>
+
+            <h3>
+                Quality Products
+            </h3>
+
+            <p>
+                Carefully selected toys and collectibles.
+            </p>
+
+        </div>
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                💬
+            </div>
+
+            <h3>
+                Customer Support
+            </h3>
+
+            <p>
+                We are here to help whenever you need us.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>
+                TOY HAVEN
+            </h2>
+
+            <p>
+                Your destination for toys, games and collectible treasures.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart</a>
+            <a href="support.html">Support</a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>
+                Categories
+            </h3>
+
+            <a href="products.html?category=Figurines">
+                Figurines
+            </a>
+
+            <a href="products.html?category=Toys">
+                Toys
+            </a>
+
+            <a href="products.html?category=Board%20Games">
+                Board Games
+            </a>
+
+            <a href="products.html?category=Diecast%20Cars">
+                Diecast Cars
+            </a>
+
+        </div>
+
+        <div class="newsletter">
+
+            <h3>
+                Stay Updated
+            </h3>
+
+            <p>
+                Subscribe to receive our latest toy updates.
+            </p>
+
+            <form id="newsletter-form">
+
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+            <p
+                id="newsletter-message"
+                class="form-message"
+            ></p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Toy Haven. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- MODAL -->
+
+<div
+    class="modal"
+    id="product-modal"
+    aria-hidden="true"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            id="modal-close"
+            type="button"
+        >
+            &times;
+        </button>
+
+        <div id="modal-body"></div>
+
+    </div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
